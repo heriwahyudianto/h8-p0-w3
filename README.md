@@ -1,0 +1,2 @@
+# h8-p0-w3
+Untuk seluruh tugas week 3, buatlah sebuah repository baru di github dengan nama h8-p0-w3. Untuk setiap satu tugas, buatlah file .js (untuk tugas javascript), file .txt (untuk tugas pseudocode), atau file .png (untuk tugas screenshot codecademy) untuk masing-masing tugas. Contoh, untuk tugas pertama, buatlah file .js dengan nama exercise-1.js dan push ke github. Kirimkan link yang merujuk ke file .js tersebut ke dalam foxhub. Jangan kirimkan link ke repository, tapi ke direct file di dalam repository-nya.
