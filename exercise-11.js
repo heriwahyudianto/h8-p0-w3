@@ -2,12 +2,13 @@ function tentukanDeretAritmatika(arr) {
   // you can only write your code here!
   let isAritmatika = true;
   let selisih1 = 0;
-  let selisih2 = 0
+  let selisih2 = 0;
   for (i = 0; i < arr.length - 2; i++) {
     selisih1 = arr[i+1] - arr[i];
     selisih2 = arr[i+2] - arr[i+1];
     if (selisih1 != selisih2 ) {
       isAritmatika = false;
+      break;
     }
   }
   return isAritmatika;
