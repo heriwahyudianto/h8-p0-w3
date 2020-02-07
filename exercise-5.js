@@ -1,7 +1,16 @@
 function palindrome(kata) {
   // you can only write your code here!
-  return ( kata === kata.split("").reverse().join("")) ? true : false;
+  let terbalik = '';
+  for(i = kata.length - 1; i >= 0 ; i--) {
+    terbalik += kata[i];
+  }
+  if (kata === terbalik) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
 
 // TEST CASES
 console.log(palindrome('katak')); // true
