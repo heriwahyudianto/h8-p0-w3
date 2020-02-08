@@ -1,17 +1,25 @@
 function targetTerdekat(arr) {
   // you can only write your code here!
-  let indexO = arr.indexOf('o');
-  let indexX = arr.indexOf('x');
-  if (indexX < 0 || indexO < 0) {
-    return 0;
-  } else {
-    if (indexO < indexX) {
-      return indexX - indexO;  
-    } else {
-      indexX = arr.lastIndexOf('x');
-      return indexO - indexX;
+  let indexO = 0;
+  let indexX = 0;
+  for(i = 0; i < arr.length; i++) {
+    if (arr[i] === 'o') {
+      indexO = i;
+      break;
     }
   }
+  for(i = 0; i < arr.length; i++) {
+    if (arr[i] === 'x' && i > indexO) {      
+      indexX = i;
+      break;
+    } else if (arr[i] === 'x') {
+      indexX = i;
+    }
+  }
+  if (indexX === 0) {
+    return 0;
+  }
+  return (indexX > indexO) ? indexX - indexO : indexO - indexX;  
 }
 
 // TEST CASES
