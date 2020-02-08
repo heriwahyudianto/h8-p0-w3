@@ -1,6 +1,17 @@
 function hitungJumlahKata(kalimat) {
-  // you can only write your code here!  
-  return kalimat.trim().split(' ').length;
+  // you can only write your code here!
+  let arrKata = [];
+  let kata= '';
+  for (i= 0; i < kalimat.length; i++) {
+    if (kalimat[i] === ' ') {
+      arrKata.push(kata);
+      kata = '';
+    } else {
+      kata += kalimat[i];
+    }
+  }  
+  arrKata.push(kata); // add the last word
+  return arrKata.length;
 }
 
 // TEST CASES
